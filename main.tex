@@ -1,0 +1,78 @@
+\documentclass[a4paper,11pt,twoside, openany]{ctexbook}
+% \usepackage[utf8]{inputenc}
+\usepackage{ctex}
+\usepackage{wallpaper} % XeLaTeX:使用wallpaper包设置封面及背景
+% https://blog.yasking.org/a/xelatex-cover.html
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+% \usepackage{color}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{url}
+\usepackage{float}   % 控制图片位置
+\usepackage{geometry}
+\geometry{left=2.0cm, right=2.0cm, top=2.5cm, bottom=2.5cm}
+\usepackage[sectionbib]{chapterbib}  
+\usepackage{cite}
+% 给每章或每节加入独立的参考文献
+% \usepackage{natbib}  % chapterbib会与natbib冲突
+% \usepackage{biblatex}
+\usepackage{tikz}
+
+\usepackage{hyperref}
+% \usepackage[colorlinks=true, linkcolor=black]{hyperref}
+\hypersetup{colorlinks, citecolor=blue, filecolor=green,linkcolor=black,urlcolor=blue,
+% colorlinks=false
+}
+
+\usepackage{enumerate}
+\usepackage{amssymb}
+
+\newcommand{\reffig}[1]{Figure \ref{#1}} % 需要引用图片的时候，用\reffig代替\ref
+
+\title{医学图像文件格式大全}
+\author{1595888913 }
+\date{November 2018}
+
+\begin{document}
+% 封面
+\begin{titlepage}
+    \thispagestyle{empty}
+    \noindent\fboxsep=0pt
+    \ThisTileWallPaper{\paperwidth}{\paperheight}{fig/screen.png}
+    \par
+    \centering
+    \Huge{\textbf{\textcolor{blue}{Encyclopedia of Medical Image File Formats \\ 医学图像文件格式大全}}}
+    \par
+\end{titlepage}
+\clearpage
+
+
+\maketitle
+\newpage
+
+\input{chp/premable.tex}
+\input{chp/contents.tex}
+\input{chp/chp1.tex}
+\input{chp/chp2.tex}
+\input{chp/chp3.tex}
+\input{chp/chp4.tex}
+\input{chp/chp5.tex}
+\input{chp/chp6.tex}
+\input{chp/chp7.tex}
+\input{chp/chp8.tex}
+\input{chp/chp9.tex}
+\input{chp/chp10.tex}
+\input{chp/chp11.tex}
+\input{chp/chp12.tex}
+\input{chp/chp13.tex}
+\input{chp/chp14.tex}
+\input{chp/chp15.tex}
+\input{chp/chp16.tex}
+\input{chp/chp17.tex}
+\input{chp/chp18.tex}
+\input{chp/chp19.tex}
+\input{chp/chp20.tex}
+\end{document}
